@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".ui.HomeFragment">
 
     <TextView
         android:id="@+id/text_home"
@@ -43,19 +43,22 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_marginEnd="10dp"
-            android:hint="YYYY-MM-DD"
+            android:hint="@string/date_format"
             android:textSize="15sp"/>
         <Button
             android:id="@+id/date_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="find image"
-            android:layout_marginEnd="10dp"/>
-        <Button
-            android:id="@+id/save_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="save image"/>
+            android:text="@string/find_image" />
     </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

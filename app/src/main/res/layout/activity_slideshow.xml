@@ -26,7 +26,7 @@
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toStartOf="@id/next_button"
       android:layout_margin="10dp"
-      android:text="previous"/>
+      android:text="@string/previous"/>
 
   <Button
       android:id="@+id/next_button"
@@ -36,7 +36,7 @@
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toEndOf="@id/prev_button"
       android:layout_margin="10dp"
-      android:text="next"/>
+      android:text="@string/next"/>
 
 
   </androidx.constraintlayout.widget.ConstraintLayout>

@@ -31,7 +31,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/save_button"
-        android:text="back"
+        android:text="@string/back"
         android:layout_margin="10dp"/>
 
     <Button
@@ -42,7 +42,7 @@
         app:layout_constraintStart_toEndOf="@id/back_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:text="save"/>
+        android:text="@string/save"/>
 
 
 

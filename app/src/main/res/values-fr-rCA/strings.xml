@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My Application</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">D\'accueil</string>
+    <string name="menu_gallery">Galerie</string>
+    <string name="menu_slideshow">Diaporama</string>
+    <string name="success">Succès!</string>
+    <string name="date_key">date</string>
+
+    <string name="help_dialog">
+        Bienvenue sur Nasa Image of the Day!\n
+        \n
+        Pour commencer, saisissez une date au format AAAA-MM-JJ dans la section ci-dessous.
+        Appuyez ensuite sur Rechercher une image. \n
+        \n
+        L\'image du jour de cette date s\'affichera, s\'il y en a une.
+        Vous pouvez ensuite enregistrer l\'image ou choisir de ne rien en faire.\n
+        \n
+        Enfin, en appuyant sur les trois lignes en haut à droite,
+        vous pouvez accéder à la galerie où vous pouvez voir vos images enregistrées,
+        voir leurs détails, les supprimer ou les ajouter à vos favoris.\n
+    </string>
+
+    <string name="favourite">préférée</string>
+    <string name="back">l\'arrière</string>
+    <string name="delete">supprimer</string>
+    <string name="save">sauvegarder</string>
+    <string name="previous">précédent</string>
+    <string name="next">suivant</string>
+    <string name="start_slideshow">Démarrer le Diaporama</string>
+    <string name="date_format">YYYY-MM-DD</string>
+    <string name="find_image">trouver l\'image</string>
+    <string name="image_found">Image Trouvée!</string>
+    <string name="no_image_found">Aucune Image Trouvée</string>
+    <string name="welcome">Bienvenue!</string>
+    <string name="confirm_delete">Confirmer la suppression?</string>
+    <string name="yes">Oui</string>
+
+</resources>

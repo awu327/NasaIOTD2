@@ -6,6 +6,8 @@ import com.example.myapplication.image.ImageHelper;
 
 import java.io.Serializable;
 
+// Image class with all required constructors for the application.
+// Depending on context, there is no need for IDs.
 public class Image {
 
     private int _id;

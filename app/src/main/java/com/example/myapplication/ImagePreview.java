@@ -7,26 +7,15 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.example.myapplication.image.Image;
 import com.example.myapplication.image.ImageHelper;
-import com.example.myapplication.ui.home.HomeFragment;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.BufferedReader;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.net.URL;
 
 import javax.net.ssl.HttpsURLConnection;
@@ -39,6 +28,7 @@ public class ImagePreview extends AppCompatActivity {
     String title;
     String date;
 
+    // Get the image. Verification that the image is available is done in the home fragment.
     class ImageExtractor extends AsyncTask<String, Integer, String> {
 
         private String urlAddress;

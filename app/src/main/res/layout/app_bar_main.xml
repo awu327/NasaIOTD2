@@ -16,7 +16,17 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Theme.MyApplication.PopupOverlay" />
+            app:popupTheme="@style/Theme.MyApplication.PopupOverlay">
+
+            <ImageView
+                android:id="@+id/help_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/help_button"/>
+
+        </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
 

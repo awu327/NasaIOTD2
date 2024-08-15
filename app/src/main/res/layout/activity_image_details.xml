@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ImageDetails">
+    tools:context=".ImageDetails"
+    android:padding="5dp">
 
     <TextView
         android:id="@+id/title_text"
@@ -31,6 +32,37 @@
         android:layout_height="150dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/fav_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/back_button"
+        android:text="@string/favourite"/>
+
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/delete_button"
+        android:layout_marginRight="5dp"
+        android:text="@string/back"/>
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/back_button"
+        android:text="@string/delete"
+        android:backgroundTint="#FF0000"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

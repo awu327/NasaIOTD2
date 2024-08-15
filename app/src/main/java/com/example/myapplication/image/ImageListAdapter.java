@@ -14,6 +14,7 @@ import com.example.myapplication.R;
 
 import java.util.ArrayList;
 
+// ImageListAdapter class to display proper text
 public class ImageListAdapter extends BaseAdapter {
 
     private Context ctx;
@@ -34,6 +35,7 @@ public class ImageListAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
+        // Get required items, and set their values for the list.
         View imageItem = View.inflate(ctx, R.layout.image_list_item, null);
         TextView titleText = imageItem.findViewById(R.id.title_text);
         TextView dateText = imageItem.findViewById(R.id.date_text);

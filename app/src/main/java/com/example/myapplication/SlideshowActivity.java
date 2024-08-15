@@ -16,6 +16,7 @@ import com.example.myapplication.image.ImageHelper;
 
 import java.util.ArrayList;
 
+// A class for displaying a slideshow.
 public class SlideshowActivity extends AppCompatActivity {
 
     ImageHelper imageHelper;
@@ -37,6 +38,7 @@ public class SlideshowActivity extends AppCompatActivity {
         Image image = imageHelper.getImage(imageList.get(position).getDate());
         displayedImage.setImageBitmap(image.getData());
 
+        // Logic for going to next image. If the slideshow reaches the last or first one, loop back around
         nextButton.setOnClickListener((View v) -> {
             if(++position >= imageList.size()) {
                 position = 0;

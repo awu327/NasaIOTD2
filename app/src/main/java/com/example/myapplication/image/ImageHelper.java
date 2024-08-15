@@ -15,23 +15,25 @@ import java.io.ByteArrayOutputStream;
 import java.sql.Array;
 import java.util.ArrayList;
 
+// Database class
 public class ImageHelper extends SQLiteOpenHelper {
 
     private static ImageHelper dbInstance;
 
+    // Instantiate the variables to keep the db running.
     protected final static int VERSION_NUM = 1;
     protected final static String DATABASE_NAME = "ImageDB";
-    public final static String TABLE_NAME = "Images";
+    protected final static String TABLE_NAME = "Images";
 
-    public final static String COL_TITLE = "Title";
-    public final static String COL_DATE = "Date";
-    public final static String COL_IMAGE_BLOB = "Blob";
-    public final static String COL_ID = "_id";
+    protected final static String COL_TITLE = "Title";
+    protected final static String COL_DATE = "Date";
+    protected final static String COL_IMAGE_BLOB = "Blob";
+    protected final static String COL_ID = "_id";
 
-    public final static int ID_POS = 0;
-    public final static int TITLE_POS = 1;
-    public final static int DATE_POS = 2;
-    public final static int BLOB_POS = 3;
+    protected final static int ID_POS = 0;
+    protected final static int TITLE_POS = 1;
+    protected final static int DATE_POS = 2;
+    protected final static int BLOB_POS = 3;
 
 
     public ImageHelper(Context ctx) {super(ctx, DATABASE_NAME, null, VERSION_NUM);}
@@ -56,7 +58,6 @@ public class ImageHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
-
         onCreate(db);
     }
 
@@ -130,6 +131,7 @@ public class ImageHelper extends SQLiteOpenHelper {
         return true;
     }
 
+    // A check to see if something exists or not.
     public boolean checkIfExists(Image image) {
         SQLiteDatabase db = this.getReadableDatabase();
 
@@ -141,5 +143,10 @@ public class ImageHelper extends SQLiteOpenHelper {
             else
                 return false;
         }
+    }
+
+    public boolean deleteImage(Image image) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        return db.delete(TABLE_NAME, COL_DATE + "=?", new String[]{image.getDate()}) > 0;
     }
 }
